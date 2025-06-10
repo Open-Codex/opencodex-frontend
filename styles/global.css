@@ -1,0 +1,7 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+html {
+    @apply bg-background text-foreground;
+    scroll-behavior: smooth;
+}
