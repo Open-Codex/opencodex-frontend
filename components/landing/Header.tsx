@@ -25,7 +25,9 @@ const Header = () => {
                 <Link href="/faq" className={isActive('/faq')}>FAQ</Link>
             </nav>
             <div className="flex gap-2">
-                <Button variant="ghost" className="text-white">Iniciar Sesión</Button>
+                <Link href="/auth/login">
+                    <Button variant="ghost" className="text-white">Iniciar Sesión</Button>
+                </Link>
                 <Button className="bg-purple-500 hover:bg-purple-600 text-white">Registrarse</Button>
             </div>
         </header>
