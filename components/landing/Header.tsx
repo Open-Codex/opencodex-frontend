@@ -28,7 +28,9 @@ const Header = () => {
                 <Link href="/auth/login">
                     <Button variant="ghost" className="text-white">Iniciar Sesión</Button>
                 </Link>
-                <Button className="bg-purple-500 hover:bg-purple-600 text-white">Registrarse</Button>
+                <Link href="/auth/register">
+                    <Button className="bg-purple-500 hover:bg-purple-600 text-white">Registrarse</Button>
+                </Link>
             </div>
         </header>
     );
