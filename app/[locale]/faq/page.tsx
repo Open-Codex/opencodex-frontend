@@ -4,37 +4,39 @@ import Footer from '@/components/landing/Footer'
 import Header from '@/components/landing/Header'
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react'
+import { useTranslations } from 'next-intl';
 
 const faqs = [
     {
-        question: "¿Necesito experiencia previa para unirme?",
+        question: "question.1",
         answer:
-            "No. OpenCodeX está abierto a todos los niveles. Puedes aprender colaborando en proyectos reales.",
+            "answer.1",
     },
     {
-        question: "¿Cómo me uno a un proyecto?",
+        question: "question.2",
         answer:
-            "Puedes explorar proyectos y enviar una solicitud para unirte. El creador o moderador evaluará tu perfil.",
+            "answer.2",
     },
     {
-        question: "¿OpenCodeX es gratuito?",
+        question: "question.3",
         answer:
-            "Sí. Es una plataforma sin fines de lucro para fomentar la colaboración y el aprendizaje.",
+            "answer.3",
     },
     {
-        question: "¿Puedo publicar mi propio proyecto?",
+        question: "question.4",
         answer:
-            "Sí. Una vez registrado puedes crear un proyecto, describirlo y buscar colaboradores.",
+            "answer.4",
     },
     {
-        question: "¿Dónde se comunican los equipos?",
+        question: "question.5",
         answer:
-            "Principalmente a través de Discord. Cada proyecto puede tener su propio servidor o canal de comunicación.",
+            "answer.5",
     },
 ];
 
 const Faq = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const t = useTranslations('Faq');
 
     return (
         <>
@@ -42,7 +44,7 @@ const Faq = () => {
                 <Header />
                 <section className="py-20 px-6text-white flex-grow">
                     <div className="max-w-3xl mx-auto">
-                        <h3 className="text-3xl font-bold mb-8 text-center">Preguntas Frecuentes</h3>
+                        <h3 className="text-3xl font-bold mb-8 text-center">{t('title')}</h3>
                         <ul className="space-y-4">
                             {faqs.map((faq, index) => (
                                 <li key={index} className="border border-white/10 rounded-lg">
@@ -50,14 +52,14 @@ const Faq = () => {
                                         className="w-full flex justify-between items-center text-left p-4 bg-[#161b22] hover:bg-[#0d1117]"
                                         onClick={() => setOpenIndex(index === openIndex ? null : index)}
                                     >
-                                        <span>{faq.question}</span>
+                                        <span>{t(faq.question)}</span>
                                         <ChevronDown
                                             className={`w-5 h-5 transition-transform ${index === openIndex ? "rotate-180" : ""
                                                 }`}
                                         />
                                     </button>
                                     {index === openIndex && (
-                                        <div className="px-4 pb-4 text-sm text-white/80">{faq.answer}</div>
+                                        <div className="px-4 pb-4 text-sm text-white/80">{t(faq.answer)}</div>
                                     )}
                                 </li>
                             ))}
