@@ -6,7 +6,8 @@ import { Button } from '../ui/button';
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
-    const t = useTranslations('LandingPage');
+    const t = useTranslations('LandingPage.header');
+    const tCommon = useTranslations('Common');
     const pathname = usePathname();
 
     const isActive = (path: string) => {
@@ -20,18 +21,18 @@ const Header = () => {
                 <Link href="/"> OpenCodeX</Link>
             </h1>
             <nav className="hidden md:flex gap-6 text-sm">
-                <Link href="/projects" className={isActive('/projects')}>{t('nav_projects')}</Link>
-                <Link href="/users" className={isActive('/developers')}>{t('nav_developers')}</Link>
-                <Link href="/about" className={isActive('/about')}>{t('nav_about')}</Link> {/* Aquí marcamos el enlace activo */}
-                <Link href="/contact" className={isActive('/contact')}>{t('nav_contact')}</Link>
-                <Link href="/faq" className={isActive('/faq')}>{t('nav_faq')}</Link>
+                <Link href="/projects" className={isActive('/projects')}>{t('nav.projects')}</Link>
+                <Link href="/users" className={isActive('/developers')}>{t('nav.developers')}</Link>
+                <Link href="/about" className={isActive('/about')}>{t('nav.about')}</Link> {/* Aquí marcamos el enlace activo */}
+                <Link href="/contact" className={isActive('/contact')}>{t('nav.contact')}</Link>
+                <Link href="/faq" className={isActive('/faq')}>{t('nav.faq')}</Link>
             </nav>
             <div className="flex gap-2">
                 <Link href="/auth/login">
-                    <Button variant="ghost" className="text-white">{t('button_login')}</Button>
+                    <Button variant="ghost" className="text-white">{tCommon('button.login')}</Button>
                 </Link>
                 <Link href="/auth/register">
-                    <Button className="bg-purple-500 hover:bg-purple-600 text-white">{t('button_register')}</Button>
+                    <Button className="bg-purple-500 hover:bg-purple-600 text-white">{tCommon('button.register')}</Button>
                 </Link>
             </div>
         </header>
