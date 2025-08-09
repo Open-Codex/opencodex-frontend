@@ -1,42 +1,78 @@
 {
+    "Common": {
+        "button": {
+            "login": "Sign in",
+            "register": "Sign up",
+            "view": "View"
+        }
+    },
     "LandingPage": {
-        "nav_projects": "Projects",
-        "nav_developers": "Developers",
-        "nav_about": "About",
-        "nav_contact": "Contact",
-        "nav_faq": "FAQ",
-        "button_login": "Sign in",
-        "button_register": "Sign up",
-        "headline": "Connect, Collaborate and Create",
-        "headline2": "The open-source platform where developers find exciting projects and creators seek talented collaborators.",
-        "button_explore_projects": "Explore Projects",
-        "button_search_collaborator": "Search Collaborator",
-        "stat_projects": "Active Projects",
-        "stat_developers": "Developers",
-        "stat_collaborations": "Collaborations",
-        "headline3": "Important Projects",
-        "headline4": "Discover innovative projects looking for passionate collaborators",
-        "button_view_project": "View Project",
-        "button_view_all_project": "View all Projects",
-        "headline_how_work": "How does it work?",
-        "how_work_1": "1. Sign up",
-        "how_work_1_desc": "Create your profile and showcase your skills, experience, and previous projects.",
-        "how_work_2": "2. Explore or Publish",
-        "how_work_2_desc": "Search for interesting projects to collaborate on or publish your own idea.",
-        "how_work_3": "3. Collaborate",
-        "how_work_3_desc": "Connect with other developers and start building something amazing together.",
-        "headline5": "Ready to start?",
-        "headline6": "Join our community of passionate developers and find your next collaborative project.",
-        "button_create_account": "Create Account",
-        "button_view_github": "View Github",
-        "headline_footer": "Connecting developers with open source projects since 2025           .",
-        "platform": "Platform",
-        "create_project": "Create Project",
-        "community": "Community",
-        "support": "Support",
-        "help_center": "Help Center",
-        "privacity": "Privacity",
-        "contact": "Contact",
-        "copy": "© 2025 OpenCodeX. All rights reserved."
+        "header": {
+            "nav": {
+                "projects": "Projects",
+                "developers": "Developers",
+                "about": "About",
+                "contact": "Contact",
+                "faq": "FAQ"
+            }
+        },
+        "hero": {
+            "title": "Connect, Collaborate and Create",
+            "subtitle": "The open-source platform where developers find exciting projects and creators seek talented collaborators.",
+            "button": {
+                "exploreProjects": "Explore Projects",
+                "searchCollaborator": "Search Collaborator"
+            }
+        },
+        "stats": {
+            "projects": "Active Projects",
+            "developers": "Developers",
+            "collaborations": "Collaborations"
+        },
+        "projects" : {
+            "title": "Important Projects",
+            "subtitle": "Discover innovative projects looking for passionate collaborators",
+            "button": {
+                "viewProject": "View Project",
+                "viewAllProjects": "View all Projects"
+            }
+        },
+        "howWork": {
+            "title": "How does it work?",
+            "subtitle": {
+                "1": "1. Sign up",
+                "2": "2. Explore or Publish",
+                "3": "3. Collaborate"
+            },
+            "description": {
+                "1": "Create your profile and showcase your skills, experience, and previous projects.",
+                "2": "Search for interesting projects to collaborate on or publish your own idea.",
+                "3": "Connect with other developers and start building something amazing together."
+            }
+        },
+        "toAction": {
+            "title": "Ready to start?",
+            "subtitle": "Join our community of passionate developers and find your next collaborative project.",
+            "button": {
+                "createAccount": "Create Account",
+                "viewGithub": "View Github"
+            }
+
+        },
+        "footer": {
+            "title": "Connecting developers with open source projects since 2025           .",
+            "platform": "Platform",
+            "community": "Community",
+            "support": "Support",
+            "copy": "© 2025 OpenCodeX. All rights reserved.",
+            "button": {
+                "projects": "Projects",
+                "createProject": "Create Project",
+                "developers": "Developers",
+                "helpCenter": "Help Center",
+                "privacity": "Privacity",
+                "contact": "Contact"
+            }
+        }
     }
 }
