@@ -8,9 +8,10 @@ import Sidebar from "./Sidebar";
 export default function LayoutController({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
 
-    const landingRoutes = ["/", "/about", "/contact", "/faq", "/privacy"];
+    const landingRoutes = ["/en", "/es", "/en/about", "/es/about", "/en/contact", "/es/contact", "/en/faq", "/es/faq", "/en/privacy", "/es/privacy"];
     const isLanding = landingRoutes.includes(pathname);
-    const isAuth = pathname.startsWith("/auth");
+    const authRoutes = ["/en/auth/login", "/es/auth/login", "/en/auth/register", "/es/auth/register"];
+    const isAuth = authRoutes.includes(pathname);
 
     const showLayout = !isLanding && !isAuth;
 

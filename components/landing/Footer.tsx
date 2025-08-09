@@ -1,23 +1,26 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import {Link} from '@/i18n/navigation';
 
 const Footer = () => {
+    const t = useTranslations('LandingPage');
+
     return (
         <footer className="bg-[#161b22] text-white/50 py-10 px-6 border-t border-white/10 w-full">
             <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 text-sm max-w-full mx-auto">
                 <div>
                     <h4 className="font-semibold text-white mb-2">OpenCodeX</h4>
-                    <p>Conectando desarrolladores con proyectos de código abierto desde 2025.</p>
+                    <p>{t('headline_footer')}</p><p className='text-[#161b22]'>this is a easter egg for solution a bug..........................................................</p>
                 </div>
                 <div>
-                    <h4 className="font-semibold text-white mb-2">Plataforma</h4>
+                    <h4 className="font-semibold text-white mb-2">{t('platform')}</h4>
                     <ul className="space-y-1">
-                        <li><Link href="#">Explorar Proyectos</Link></li>
-                        <li><Link href="#">Desarrolladores</Link></li>
-                        <li><Link href="#">Crear Proyecto</Link></li>
+                        <li><Link href="#">{t('button_explore_projects')}</Link></li>
+                        <li><Link href="#">{t('nav_developers')}</Link></li>
+                        <li><Link href="#">{t('create_project')}</Link></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 className="font-semibold text-white mb-2">Comunidad</h4>
+                    <h4 className="font-semibold text-white mb-2">{t('community')}</h4>
                     <ul className="space-y-1">
                         <li><Link href="#">FAQ</Link></li>
                         <li><Link href="#">Blog</Link></li>
@@ -25,16 +28,16 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h4 className="font-semibold text-white mb-2">Soporte</h4>
+                    <h4 className="font-semibold text-white mb-2">{t('support')}</h4>
                     <ul className="space-y-1">
-                        <li><Link href="#">Centro de Ayuda</Link></li>
-                        <li><Link href="#">Privacidad</Link></li>
-                        <li><Link href="#">Contacto</Link></li>
+                        <li><Link href="#">{t('help_center')}</Link></li>
+                        <li><Link href="#">{t('privacity')}</Link></li>
+                        <li><Link href="#">{t('contact')}</Link></li>
                     </ul>
                 </div>
             </div>
             <div className="mt-10 text-center text-xs">
-                © 2025 OpenCodeX. Todos los derechos reservados.
+                {t('copy')}
             </div>
         </footer>
     );
