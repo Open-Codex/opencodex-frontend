@@ -1,10 +1,12 @@
 "use client";
 
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import {Link} from '@/i18n/navigation';
 import { Button } from '../ui/button';
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
+    const t = useTranslations('LandingPage');
     const pathname = usePathname();
 
     const isActive = (path: string) => {
@@ -18,18 +20,18 @@ const Header = () => {
                 <Link href="/"> OpenCodeX</Link>
             </h1>
             <nav className="hidden md:flex gap-6 text-sm">
-                <Link href="/projects" className={isActive('/projects')}>Proyectos</Link>
-                <Link href="/users" className={isActive('/developers')}>Desarrolladores</Link>
-                <Link href="/about" className={isActive('/about')}>Acerca de</Link> {/* Aquí marcamos el enlace activo */}
-                <Link href="/contact" className={isActive('/contact')}>Contacto</Link>
-                <Link href="/faq" className={isActive('/faq')}>FAQ</Link>
+                <Link href="/projects" className={isActive('/projects')}>{t('nav_projects')}</Link>
+                <Link href="/users" className={isActive('/developers')}>{t('nav_developers')}</Link>
+                <Link href="/about" className={isActive('/about')}>{t('nav_about')}</Link> {/* Aquí marcamos el enlace activo */}
+                <Link href="/contact" className={isActive('/contact')}>{t('nav_contact')}</Link>
+                <Link href="/faq" className={isActive('/faq')}>{t('nav_faq')}</Link>
             </nav>
             <div className="flex gap-2">
                 <Link href="/auth/login">
-                    <Button variant="ghost" className="text-white">Iniciar Sesión</Button>
+                    <Button variant="ghost" className="text-white">{t('button_login')}</Button>
                 </Link>
                 <Link href="/auth/register">
-                    <Button className="bg-purple-500 hover:bg-purple-600 text-white">Registrarse</Button>
+                    <Button className="bg-purple-500 hover:bg-purple-600 text-white">{t('button_register')}</Button>
                 </Link>
             </div>
         </header>
