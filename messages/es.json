@@ -75,5 +75,67 @@
                 "contact": "Contacto"
             }
         }
+    },
+    "About": {
+        "title": "¿Qué es OpenCodeX?",
+        "subtitle": "OpenCodeX es una plataforma de colaboración que conecta desarrolladores con proyectos de código abierto o sin fines de lucro. Aquí puedes aportar con tus habilidades, aprender en equipo y contribuir a ideas reales que impactan a otros.",
+        "idea": "Cómo nació la idea",
+        "ideaDesc": "La idea de OpenCodeX nació al ver cómo muchos desarrolladores (especialmente estudiantes o autodidactas) tienen las ganas de colaborar en proyectos reales, pero no encuentran dónde hacerlo. Creamos este espacio para que cualquiera pueda encontrar proyectos interesantes o iniciar el suyo, con un enfoque en el aprendizaje y el trabajo en equipo.",
+        "ourValues": "Nuestros valores",
+        "ourValuesTitle": {
+            "1": "Colaboración",
+            "2": "Transparencia",
+            "3": "Aprendizaje"
+        },
+        "ourValuesDesc": {
+            "1": "Creemos en el poder de trabajar en equipo y crecer juntos.",
+            "2": "Todos los proyectos aquí son abiertos y accesibles para contribuir.",
+            "3": "Fomentamos el aprendizaje continuo a través de la práctica real."
+        },
+        "ourTeam": "Nuestro equipo",
+        "ourTeamDesc": "Somos un pequeño grupo de desarrolladores y diseñadores apasionados por el código abierto y la colaboración. Estamos construyendo OpenCodeX como un espacio libre y accesible para todos."
+    },
+    "Contact": {
+        "title": "Contacto",
+        "subtitle": "¿Tienes dudas, sugerencias o quieres colaborar con nosotros? Escríbenos y te responderemos lo antes posible.",
+        "form": {
+            "name": "Nombre",
+            "namePlaceholder": "Tu Nombre",
+            "email": "Correo",
+            "emailPlaceholder": "tucorreo@example.com",
+            "message": "Mensaje",
+            "messagePlaceholder": "Escribe tu mensaje aquí...",
+            "sendMessage": "Enviar Mensaje"
+        },
+        "mailto": "También puedes escribirnos directamente a:"
+    },
+    "Faq": {
+        "title": "Preguntas Frecuentes",
+        "question": {
+            "1": "¿Necesito experiencia previa para unirme?",
+            "2": "¿Cómo me uno a un proyecto?",
+            "3": "¿OpenCodeX es gratuito?",
+            "4": "¿Puedo publicar mi propio proyecto?",
+            "5": "¿Dónde se comunican los equipos?"
+        },
+        "answer": {
+            "1": "No. OpenCodeX está abierto a todos los niveles. Puedes aprender colaborando en proyectos reales.",
+            "2": "Puedes explorar proyectos y enviar una solicitud para unirte. El creador o moderador evaluará tu perfil.",
+            "3": "Sí. Es una plataforma sin fines de lucro para fomentar la colaboración y el aprendizaje.",
+            "4": "Sí. Una vez registrado puedes crear un proyecto, describirlo y buscar colaboradores.",
+            "5": "Principalmente a través de Discord. Cada proyecto puede tener su propio servidor o canal de comunicación."
+        }
+    },
+    "Privacy": {
+        "title": "Política de Privacidad",
+        "subtitle": "En OpenCodeX valoramos tu privacidad. Esta plataforma fue construida para ser un espacio seguro de colaboración. Aquí te explicamos cómo manejamos tus datos:",
+        "list": {
+            "1": "No compartimos tu información personal con terceros sin tu consentimiento.",
+            "2": "La información que compartes (como tus habilidades o perfil) solo será visible dentro de la plataforma.",
+            "3": "Usamos herramientas seguras de autenticación y cifrado para proteger tu cuenta.",
+            "4": "Puedes solicitar eliminar tu cuenta en cualquier momento y todos tus datos serán eliminados.",
+            "5": "No enviamos correos masivos ni vendemos listas de usuarios."
+        },
+        "lastUpdate": "Última actualización: Agosto 2025"
     }
 }
