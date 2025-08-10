@@ -136,5 +136,44 @@
             "5": "We do not send mass emails or sell user lists."
         },
         "lastUpdate": "Last update: August 2025"
+    },
+    "Auth": {
+        "Login": {
+            "title": "Sign In",
+            "subtitle": "Log in to your account to continue collaborating",
+            "form": {
+                "username": "Username ",
+                "usernamePlaceholder": "username ",
+                "password": "Password ",
+                "forgot": "Forgot your password? ",
+                "remember": "Remember "
+            },
+            "notAccount": "Don't have an account?",
+            "register": "Sign Up here",
+            "accept": "By logging in, you agree to our",
+            "terms": "terms of service",
+            "privacy": "privacy policy"
+        },
+        "Register": {
+            "title": "Sign Up",
+            "subtitle": "Create your account and start collaborating on projects",
+            "form": {
+                "name": "Name ",
+                "username": "Username ",
+                "email": "Email ",
+                "password": "Password ",
+                "confirmPassword": "Confirm Password "
+            },
+            "checkbox1": "I accept the ",
+            "checkbox2": "Terms and Conditions ",
+            "checkbox3": "and ",
+            "checkbox4": "Privacy Policy",
+            "haveAccount": "Already have an account? ",
+            "signInHere": "Log in here",
+            "acceptOurTerms": "By registering, you agree to our ",
+            "and": " and ",
+            "terms": "terms of service",
+            "privacy": "privacy policy"
+        }
     }
 }

@@ -137,5 +137,44 @@
             "5": "No enviamos correos masivos ni vendemos listas de usuarios."
         },
         "lastUpdate": "Última actualización: Agosto 2025"
+    },
+    "Auth": {
+        "Login": {
+            "title": "Iniciar Sesión",
+            "subtitle": "Accede a tu cuenta para continuar colaborando",
+            "form": {
+                "username": "Nombre de Usuario ",
+                "usernamePlaceholder": "username ",
+                "password": "Contraseña ",
+                "forgot": "¿Olvidaste tu Contraseña ",
+                "remember": "Recordarme "
+            },
+            "notAccount": "¿No tienes una cuenta?",
+            "register": "Regístrate aquí",
+            "accept": "Al iniciar sesión, aceptas nuestros",
+            "terms": "términos de servicio",
+            "privacy": "política de privacidad"
+        },
+        "Register": {
+            "title": "Registrarse",
+            "subtitle": "Crea tu cuenta y comienza a colaborar en proyectos",
+            "form": {
+                "name": "Nombre Completo ",
+                "username": "Nombre de Usuario ",
+                "email": "Email ",
+                "password": "Contraseña ",
+                "confirmPassword": "Confirmar Contraseña "
+            },
+            "checkbox1": "Acepto los ",
+            "checkbox2": "Términos, Condiciones ",
+            "checkbox3": "y la ",
+            "checkbox4": "Política de Privacidad",
+            "haveAccount": "¿Ya tienes una cuenta? ",
+            "signInHere": "Inicia Sesión aquí",
+            "acceptOurTerms": "Al registrarse, aceptas nuestros ",
+            "and": " y ",
+            "terms": "términos de servicio",
+            "privacy": "política de privacidad"
+        }
     }
 }
