@@ -176,5 +176,25 @@
             "terms": "términos de servicio",
             "privacy": "política de privacidad"
         }
+    },
+    "App": {
+        "Navbar": {
+            "pathnameMe": "Mi Perfil",
+            "search": "Buscar",
+            "user": "Usuario",
+            "project": "Proyecto",
+            "newProject": "Nuevo Proyecto"
+        },
+        "Sidebar": {
+            "me": "Mi Perfil",
+            "projects": "Proyectos",
+            "exploreAll": "Explorar Todo",
+            "myProjects": "Mis Proyectos",
+            "developers": "Desarrolladores",
+            "community": "Comunidad",
+            "settings": "Configuración",
+            "login": "Inicia Sesión",
+            "register": "Registrate"
+        }
     }
 }
