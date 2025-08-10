@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1] - 2025-08-09
+
+### Added
+- Auth Page (Login, Register and ~Forgot~)
+- Translate Auth Login and Register
+- Connection to the Auth API (Login, Register and ~Forgot~)
+
 ## [0.2.0] - 2025-08-09
 
 ### Added
