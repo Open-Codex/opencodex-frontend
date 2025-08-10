@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2] - 2025-08-10
+
+### Added
+- Navbar and Sidebar Components
+- Translate Navbar and Sidebar
+- User info in Sidebar Footer(jwt-decode)
+
 ## [0.2.1] - 2025-08-09
 
 ### Added
