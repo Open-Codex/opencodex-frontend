@@ -30,11 +30,8 @@ export function useRegister() {
                 throw new Error('Las contraseñas no coinciden');
             }
 
-            const response = await apiFetch('/auth/register', {
+            return await apiFetch('/auth/register', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
                 body: JSON.stringify({
                     name: data.name,
                     username: data.username,
@@ -42,17 +39,13 @@ export function useRegister() {
                     password: data.password
                 }),
             });
-
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.error || 'Registration failed');
-            }
-
-            return response.json() as Promise<RegisterResponse>;
         },
         onSuccess: (data) => {
-            localStorage.setItem('authToken', data.token);
+            localStorage.setItem('token', data.token); // Usa 'token' como en login
             router.push('/me');
         },
+        onError: (error) => {
+            console.error('Registration error:', error.message);
+        }
     });
 }

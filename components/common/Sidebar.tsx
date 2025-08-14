@@ -42,7 +42,7 @@ const Sidebar = () => {
     const [userInfo, setUserInfo] = useState<{ name: string; email: string } | null>(null);
 
     useEffect(() => {
-        const token = localStorage.getItem("authToken");
+        const token = localStorage.getItem("token");
         if (token) {
             try {
                 const decoded = jwtDecode<TokenPayload>(token);
@@ -89,7 +89,7 @@ const Sidebar = () => {
     ];
 
     return (
-        <aside className="w-60 h-screen flex flex-col bg-[#161b22] text-white border-r border-gray-800">
+        <aside className="w-60 h-screen fixed left-0 top-0 flex flex-col bg-[#161b22] text-white border-r border-gray-800 z-10">
             {/* Logo */}
             <div className="flex items-center gap-2 p-4 border-b border-gray-800">
                 <span className="text-[#a855f7] text-2xl">⌘</span>

@@ -25,22 +25,17 @@ export function useLogin() {
         mutationFn: async (data: LoginData) => {
             const response = await apiFetch('/auth/login', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
                 body: JSON.stringify(data),
             });
 
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.error || 'Login failed');
-            }
-
-            return response.json() as Promise<LoginResponse>;
+            return response;
         },
         onSuccess: (data) => {
-            localStorage.setItem('authToken', data.token);
+            localStorage.setItem('token', data.token);
             router.push('/me');
         },
+        onError: (error) => {
+            console.error('Login error:', error.message);
+        }
     });
 }
