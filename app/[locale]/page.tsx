@@ -13,7 +13,6 @@ export default function Home() {
 
   return (
     <ReactLenis root>
-      <div className="min-h-screen flex flex-col bg-[#0d1117] text-white">
         <main className="flex-grow">
           <Header />
           <Hero />
@@ -24,7 +23,6 @@ export default function Home() {
         </main>
 
         <Footer />
-      </div>
     </ReactLenis>
   );
 }
