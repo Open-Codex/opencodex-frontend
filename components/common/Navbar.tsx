@@ -28,7 +28,7 @@ function Navbar() {
     };
 
     return (
-        <nav className="flex items-center justify-between px-4 py-2 bg-[#161b22] text-white border-b border-gray-800">
+        <nav className="fixed top-0 left-60 right-0 flex items-center justify-between px-4 py-2 bg-[#161b22] text-white border-b border-gray-800 z-10">
             {/* Title */}
             <div className="flex items-center gap-2">
                 <span className="text-[#a855f7] text-xl">⌘</span>

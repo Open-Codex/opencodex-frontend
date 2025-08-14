@@ -20,10 +20,10 @@ export default function LayoutController({ children }: { children: React.ReactNo
             <div className="flex min-h-screen">
                 {showLayout && <Sidebar />}
 
-                <div className="flex-1 flex flex-col">
+                <div className="flex-1 flex flex-col overflow-hidden">
                     {showLayout && <Navbar />}
 
-                    <main className="flex-1 py-4 mx-auto">{children}</main>
+                    <main className="flex-1 overflow-y-auto pt-16 pl-60 p-4">{children}</main>
                 </div>
             </div>
         </>
