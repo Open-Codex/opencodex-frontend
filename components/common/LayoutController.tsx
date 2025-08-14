@@ -15,6 +15,11 @@ export default function LayoutController({ children }: { children: React.ReactNo
 
     const showLayout = !isLanding && !isAuth;
 
+    if (!showLayout) {
+        // Para landing y auth devolvemos directamente el contenido
+        return <>{children}</>;
+    }
+
     return (
         <>
             <div className="flex min-h-screen">
@@ -23,7 +28,14 @@ export default function LayoutController({ children }: { children: React.ReactNo
                 <div className="flex-1 flex flex-col overflow-hidden">
                     {showLayout && <Navbar />}
 
-                    <main className="flex-1 overflow-y-auto pt-16 pl-60 p-4">{children}</main>
+                    <main
+                        className={`flex-1 overflow-y-auto ${showLayout ? "pt-[64px] pl-[240px] p-4" : ""
+                            }`}
+                    >
+                        <div className="max-w-[1500px] mx-auto">
+                            {children}
+                        </div>
+                    </main>
                 </div>
             </div>
         </>
