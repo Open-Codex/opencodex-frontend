@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0] - 2025-08-10
+
+### Change
+- LayoutController
+- Hooks for Auth
+- Fetcher and Utils
+
 ## [0.2.2] - 2025-08-10
 
 ### Added
