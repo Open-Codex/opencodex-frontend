@@ -104,7 +104,7 @@ const RegisterForm = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center pb-16">
+        <div className="flex items-center justify-center pb-16">
             <div className="w-full max-w-md space-y-6 pt-16">
                 {/* Logo and Brand */}
                 <div className="text-center">
