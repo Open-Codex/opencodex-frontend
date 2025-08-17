@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.1] - 2025-08-16
+
+### Change
+- Structure for Me Page
+- Add Me Page
+- Hooks for Me Page
+- Add Typos for Me Page
+
+#### Pending Changes
+- Translate
+- Contact Component
+- Edit Information
+
 ## [0.3.0] - 2025-08-10
 
 ### Change
