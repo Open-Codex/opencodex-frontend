@@ -194,6 +194,26 @@
             "settings": "Settings",
             "login": "Login",
             "register": "Register"
+        },
+        "Page": {
+            "Me": {
+                "projects": "Projects",
+                "collaborations": "Collaborations",
+                "likes": "Likes",
+                "reputation": "Reputation",
+                "registeredAt": "Joined At" ,
+                "status": "Status",
+                "aboutMe": "About Me",
+                "aboutMe2": "About Me",
+                "contact": "Contact",
+                "contactText": "You can contact me through my social media accounts or by email.",
+                "lastSeen": "Last Seen",
+                "skills": "Skills",
+                "notSkills": "No skills added",
+                "role": "Role",
+                "joinedAt": "Joined on",
+                "notMemberships": "Not participating in any projects"
+            }
         }
     }
 }
