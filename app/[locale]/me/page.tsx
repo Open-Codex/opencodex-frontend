@@ -10,23 +10,25 @@ import ContactSection from "@/components/features/users/profile/ContactSection";
 import ProfileSkeleton from "@/components/features/users/profile/ProfileSkeleton";
 import ProjectsSection from '@/components/features/users/profile/ProjectSection';
 import SkillsSection from '@/components/features/users/profile/SkillsSection';
+import { useTranslations } from 'next-intl';
 
 const Me = () => {
     const { data, isLoading, error } = useMe();
     const [activeTab, setActiveTab] = useState<string>("about");
+    const t = useTranslations('App.Page.Me');
 
     if (isLoading) return <ProfileSkeleton />;
     if (error) return <div className="p-6 text-red-500">Error: {error.message}</div>;
-    if (!data) return <div className="p-6 text-white">No se encontraron datos</div>;
+    if (!data) return <div className="p-6 text-white">Not found data</div>;
 
     const user = data;
     const stats = [
-        { label: "Proyectos", value: user.memberships?.length || 0 },
-        { label: "Colaboraciones", value: "N/A" },
-        { label: "Me Gustas", value: user.likesReceived || 0 },
-        { label: "Reputación", value: "N/A" },
-        { label: "Se unió", value: user.registeredAt ? new Date(user.registeredAt).getFullYear() : "N/A" },
-        { label: "Estado", value: user.status || "Activo" },
+        { label: t('projects'), value: user.memberships?.length || 0 },
+        { label: t('collaborations'), value: "N/A" },
+        { label: t('likes'), value: user.likesReceived || 0 },
+        { label: t('reputation'), value: "N/A" },
+        { label: t('registeredAt'), value: user.registeredAt ? new Date(user.registeredAt).getFullYear() : "N/A" },
+        { label: t('status'), value: user.status || "Activo" },
     ];
 
     return (
