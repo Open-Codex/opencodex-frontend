@@ -21,12 +21,14 @@ const Me = () => {
     if (error) return <div className="p-6 text-red-500">Error: {error.message}</div>;
     if (!data) return <div className="p-6 text-white">Not found data</div>;
 
-    const user = data;
+    const user = data; console.log(user);
+    const reputation = Math.floor((user.likesReceived / (user.likesReceived + user.dislikesReceived)) * 100);
+
     const stats = [
         { label: t('projects'), value: user.memberships?.length || 0 },
-        { label: t('collaborations'), value: "N/A" },
+        { label: t('collaborations'), value: user.memberships?.length || 0 },
         { label: t('likes'), value: user.likesReceived || 0 },
-        { label: t('reputation'), value: "N/A" },
+        { label: t('reputation'), value: reputation + "%"},
         { label: t('registeredAt'), value: user.registeredAt ? new Date(user.registeredAt).getFullYear() : "N/A" },
         { label: t('status'), value: user.status || "Activo" },
     ];
