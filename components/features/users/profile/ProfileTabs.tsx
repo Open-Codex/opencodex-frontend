@@ -1,10 +1,13 @@
 'use client'
 
-import { useState } from "react";
 import { useTranslations } from 'next-intl';
 
-const ProfileTabs = () => {
-  const [activeTab, setActiveTab] = useState("about");
+type Props = {
+  activeTab: string;
+  setActiveTab: (tab: string) => void;
+};
+
+const ProfileTabs = ({ activeTab, setActiveTab }: Props) => {
   const t = useTranslations('App.Page.Me');
 
   return (
