@@ -213,7 +213,9 @@
                 "notSkills": "No skills added",
                 "role": "Role",
                 "joinedAt": "Joined on",
-                "notMemberships": "Not participating in any projects"
+                "notMemberships": "Not participating in any projects",
+                "userNotFound": "User not found",
+                "userNotFoundDescription": "The username may be incorrect or the profile may have been deleted."
             }
         }
     }

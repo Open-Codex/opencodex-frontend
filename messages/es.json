@@ -214,7 +214,9 @@
                 "notSkills": "No se han añadido habilidades",
                 "role": "Rol",
                 "joinedAt": "Unido el",
-                "notMemberships": "No participa en ningún proyecto"
+                "notMemberships": "No participa en ningún proyecto",
+                "userNotFound": "Usuario no encontrado",
+                "usetNotFoundDescription": "Es posible que el nombre de usuario sea incorrecto o el perfil haya sido eliminado."
             }
         }
     }
