@@ -34,7 +34,9 @@ export async function apiFetch(path: string, options: RequestInit = {}) {
             } catch (e) {
                 // JSON error response
             }
-            throw new Error(errorMessage);
+            const error = new Error(errorMessage) as Error & { status?: number };
+            error.status = res.status;
+            throw error;
         }
 
         return await res.json();
