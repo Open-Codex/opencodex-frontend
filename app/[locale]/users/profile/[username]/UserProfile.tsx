@@ -22,8 +22,21 @@ const UserProfile = ({ username }: Props) => {
     const t = useTranslations('App.Page.Me');
 
     if (isLoading) return <ProfileSkeleton />;
-    if (error) return <div className="p-6 text-red-500">Error: {error.message}</div>;
-    if (!data) return <div className="p-6 text-white">Not found data</div>;
+    if (error) {
+        return (
+            <div className="p-6 text-red-500">
+                Error unexpected: {error.message}
+            </div>
+        );
+    }
+    if (!data) {
+    return (
+            <div className="p-6 text-white">
+                <h2 className="text-2xl font-bold mb-2">{t('userNotFound')}</h2>
+                <p className="text-gray-400">{t('userNotFoundDescription')}</p>
+            </div>
+        );
+    }
 
     const user = data;
     const reputation = Math.floor((user.likesReceived / (user.likesReceived + user.dislikesReceived)) * 100);
