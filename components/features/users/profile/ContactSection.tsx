@@ -6,7 +6,7 @@ const ContactSection = () => {
 
     return (
         <div className="bg-[#161b22] rounded-md p-4">
-            <h2 className="font-semibold mb-2">Contacto</h2>
+            <h2 className="font-semibold mb-2">{t('contact')}</h2>
             <p className="text-gray-300 text-sm mb-4">
                 {t('contactText')}
             </p>

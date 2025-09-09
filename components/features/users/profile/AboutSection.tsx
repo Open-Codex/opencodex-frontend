@@ -3,6 +3,7 @@
 import { formatDate } from "@/lib/utils";
 import { User } from "@/types";
 import { useTranslations } from 'next-intl';
+import { format } from "path";
 
 const AboutSection = ({ user }: { user: User }) => {
     const t = useTranslations('App.Page.Me');
@@ -13,11 +14,12 @@ const AboutSection = ({ user }: { user: User }) => {
             <p className="text-gray-300 text-sm">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem veniam quaerat ea, tempora sint odit, laborum veritatis, dolor soluta voluptatibus natus consequuntur blanditiis esse nihil dolore? Soluta odio odit corporis voluptate nesciunt ad, rem nihil molestiae praesentium delectus exercitationem ipsum. Dignissimos vero rerum tempora adipisci nobis suscipit aliquam cum, fuga odit culpa eum ipsum consequuntur doloremque alias quae, illo dolorum iusto. Sunt qui ipsam adipisci earum nemo voluptatum illum impedit, asperiores, inventore, repellat molestiae. Dignissimos dolorem commodi vitae in dolores consequatur sunt dicta necessitatibus earum eum, consectetur, architecto voluptates molestiae praesentium veritatis voluptas magni vero accusantium perferendis incidunt ratione voluptatibus placeat reiciendis. Architecto molestias adipisci quam ipsa doloremque accusantium! Ut eaque quas magnam. Molestiae sunt aspernatur recusandae incidunt beatae voluptatum doloremque, iure cumque reiciendis dolores, officia fugiat quidem magni veniam pariatur? Alias eligendi placeat quam ab. Doloremque reprehenderit aliquid molestias minima provident pariatur iure debitis. Facere eaque aliquam corrupti officiis cum, eligendi nobis harum, tempore repudiandae culpa dolorem debitis mollitia beatae perspiciatis excepturi repellat quo voluptates est impedit consectetur obcaecati. Voluptatem deserunt sapiente repudiandae suscipit molestiae velit itaque assumenda, asperiores quam repellat recusandae vitae corporis possimus porro debitis. Enim quos nesciunt ad at culpa fuga sapiente optio quasi, officiis repellendus cupiditate recusandae illo ipsa itaque placeat dolorum ipsum consequuntur, provident perferendis maxime vitae aperiam nulla mollitia facere? Repellendus ratione dolorem sunt molestiae eligendi unde, reiciendis a. Ad culpa maiores id ex corporis. Incidunt itaque sequi aspernatur ipsa numquam iusto porro a quos! Aspernatur totam dolorem accusantium ex fugit. Laudantium laboriosam voluptas dolor voluptates commodi aliquid magni soluta repellendus iste. Fugiat, nihil! Eos, suscipit eaque quasi laboriosam accusantium consequuntur deleniti sequi modi minima tempore numquam quo a tempora, rem explicabo officia, tenetur repellendus enim incidunt necessitatibus dolorem doloribus! Vel voluptatibus cum maiores beatae provident voluptate hic, sequi unde commodi optio delectus harum eius qui esse dolores veritatis! Molestias in consequuntur ullam maxime maiores, temporibus quae nostrum doloremque asperiores repellendus dolores sapiente porro aspernatur totam recusandae minima ut perspiciatis autem atque. Libero veritatis facere pariatur ab accusamus fugit asperiores reprehenderit, adipisci vitae suscipit expedita illum magnam unde odit nobis quasi aliquid? Enim odit, rerum deserunt earum corporis vero consectetur voluptate quibusdam, aut tenetur animi consequuntur quisquam reprehenderit aperiam recusandae cum exercitationem accusamus! Esse assumenda et saepe illo eum veritatis impedit? Odit cupiditate aliquam quas ipsa adipisci perspiciatis autem exercitationem praesentium unde rerum reprehenderit animi saepe vel possimus eaque esse cumque eligendi harum est, laboriosam quos, quo voluptatum asperiores voluptas? Dolores unde incidunt, esse corrupti exercitationem quas, laborum repellat praesentium et ducimus ipsa perspiciatis repellendus aspernatur aliquid blanditiis beatae modi tempore maiores cupiditate sapiente nihil quam impedit eligendi non. Quasi, laboriosam consequuntur quaerat saepe sed veritatis repellat in eum quis libero nulla esse nam cupiditate animi facilis illum commodi! Illum similique quidem dolore iure provident repellat obcaecati veritatis sunt aliquid cum! Corporis quod iusto odio atque, saepe eum incidunt nihil ratione distinctio. Provident porro sed, at amet molestiae itaque sint velit ducimus est harum! Dicta pariatur, laudantium nesciunt aliquid illum fugit natus rem!
             </p>
-            {user.lastLogin || (
-                <p className="text-gray-500 text-xs mt-4">
-                    {t('lastSeen')}: {formatDate(user.lastLogin)}
-                </p>
+            <p className="text-gray-500 text-xs mt-4">
+            {/* convert to conditional */}
+            {t('lastSeen')}: {formatDate(user.lastLogin) || (
+                    t('notSeen')
             )}
+            </p>
         </div>
     );
 }
