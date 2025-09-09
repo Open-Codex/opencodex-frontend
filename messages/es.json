@@ -195,6 +195,27 @@
             "settings": "Configuración",
             "login": "Inicia Sesión",
             "register": "Registrate"
+        },
+        "Page": {
+            "Me": {
+                "projects": "Proyectos",
+                "collaborations": "Colaboraciones",
+                "likes": "Me Gustas",
+                "reputation": "Reputación",
+                "registeredAt": "Se unió" ,
+                "status": "Estado",
+                "aboutMe": "Sobre mi",
+                "aboutMe2": "Acerca de mi",
+                "contact": "Contacto",
+                "contactText": "Puedes contactarme a través de mis redes sociales o por correo electrónico.",
+                "lastSeen": "Último acceso",
+                "notSeen": "Sin acceso aun",
+                "skills": "Habilidades",
+                "notSkills": "No se han añadido habilidades",
+                "role": "Rol",
+                "joinedAt": "Unido el",
+                "notMemberships": "No participa en ningún proyecto"
+            }
         }
     }
 }
