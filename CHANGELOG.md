@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.2] - 2025-09-09
+
+### Change
+- Structure for User Profile Page
+- Add User Profile Page
+- Hooks for User Profile Page
+- Add Typos for User Profile Page
+- Translate
+- Contact Component
+
+#### Pending Changes
+- Component for userNotFound Error
+
 ## [0.3.1] - 2025-09-09
 
 ### Change
