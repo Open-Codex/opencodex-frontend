@@ -6,8 +6,9 @@ interface Props {
   };
 }
 
-const Page = ({ params }: Props) => {
-  return <UserPage username={params.username} />;
+const Page = async ({ params }: Props) => {
+  const { username } = await params;
+  return <UserPage username={username} />;
 }
 
 export default Page;
