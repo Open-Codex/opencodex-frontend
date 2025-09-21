@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.3] - 2025-09-21
+
+### Change
+- Structure for Project Profile Page
+- Add Project Profile Page
+- Hooks for Project Profile Page
+- Add Typos for Project Profile Page
+- Translate
+- Contact Component
+
+#### Pending Changes
+- Component for projectNotFound Error
+- Component for Vacancies
+- Buttons funcionality
+
 ## [0.3.2] - 2025-09-09
 
 ### Change
