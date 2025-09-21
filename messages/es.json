@@ -217,6 +217,31 @@
                 "notMemberships": "No participa en ningún proyecto",
                 "userNotFound": "Usuario no encontrado",
                 "usetNotFoundDescription": "Es posible que el nombre de usuario sea incorrecto o el perfil haya sido eliminado."
+            },
+            "Project": {
+                "members": "Miembros",
+                "vacancies": "Vacantes",
+                "likes": "Me Gustas",
+                "category": "Categoria",
+                "registeredAt": "Se creó" ,
+                "status": "Estado",
+                "aboutMe": "Acerca de",
+                "aboutMe2": "Acerca del Proyecto",
+                "contact": "Contacto",
+                "contactText": "Puedes contactarnos a través de nuestras redes sociales o por correo electrónico.",
+                "skills": "Habilidades",
+                "notSkills": "No se han añadido habilidades",
+                "role": "Rol",
+                "joinedAt": "Unido el",
+                "projectNotFound": "Proyecto no encontrado",
+                "projectNotFoundDescription": "Es posible que el Proyecto sea incorrecto o haya sido eliminado.",
+                "button": {
+                    "submitApplication": "Enviar Solicitud",
+                    "like": "Me Gusta",
+                    "save": "Guardar",
+                    "share": "Compartir",
+                    "report": "Reportar"
+                }
             }
         }
     }

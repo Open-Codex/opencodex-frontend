@@ -216,6 +216,31 @@
                 "notMemberships": "Not participating in any projects",
                 "userNotFound": "User not found",
                 "userNotFoundDescription": "The username may be incorrect or the profile may have been deleted."
+            },
+            "Project": {
+                "members": "Members",
+                "vacancies": "Vacancies",
+                "likes": "Likes",
+                "category": "Category",
+                "registeredAt": "Created at" ,
+                "status": "Status",
+                "aboutMe": "About Project",
+                "aboutMe2": "About Project",
+                "contact": "Contact",
+                "contactText": "You can contact us through our social media accounts or by email.",
+                "skills": "Skills",
+                "notSkills": "No skills added",
+                "role": "Role",
+                "joinedAt": "Joined on",
+                "projectNotFound": "Project not found",
+                "projectNotFoundDescription": "The Project may be incorrect or the Project may have been deleted.",
+                "button": {
+                    "submitApplication": "Submit Application",
+                    "like": "Like",
+                    "save": "Save",
+                    "share": "Share",
+                    "report": "Report"
+                }
             }
         }
     }
