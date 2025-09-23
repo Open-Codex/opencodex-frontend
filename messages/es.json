@@ -235,6 +235,11 @@
                 "joinedAt": "Unido el",
                 "projectNotFound": "Proyecto no encontrado",
                 "projectNotFoundDescription": "Es posible que el Proyecto sea incorrecto o haya sido eliminado.",
+                "unknownSkill": "Habilidad Desconocida",
+                "filled": "Lleno",
+                "open": "Abierto",
+                "apply": "Aplicar",
+                "noVacancies": "No hay vacantes disponibles",
                 "button": {
                     "submitApplication": "Enviar Solicitud",
                     "like": "Me Gusta",

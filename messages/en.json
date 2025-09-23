@@ -234,6 +234,11 @@
                 "joinedAt": "Joined on",
                 "projectNotFound": "Project not found",
                 "projectNotFoundDescription": "The Project may be incorrect or the Project may have been deleted.",
+                "unknownSkill": "Unknown Skill",
+                "filled": "Filled",
+                "open": "Open",
+                "apply": "Apply",
+                "noVacancies": "No vacancies available",
                 "button": {
                     "submitApplication": "Submit Application",
                     "like": "Like",
