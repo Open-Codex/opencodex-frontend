@@ -11,6 +11,7 @@ import ProfileSkeleton from "@/components/features/projects/profile/ProfileSkele
 import MembersSection from '@/components/features/projects/profile/MembersSection';
 import SkillsSection from '@/components/features/projects/profile/SkillsSection';
 import { useTranslations } from 'next-intl';
+import VacanciesSection from '@/components/features/projects/profile/VacanciesSection';
 
 interface Props {
     id: string;
@@ -60,12 +61,14 @@ const ProjectProfile = ({ id }: Props) => {
                     <div className="col-span-2">
                         {activeTab === "about" && <AboutSection project={project} />}
                         {activeTab === "contact" && <ContactSection />}
-                    </div>
-                    <SkillsSection projectSkills={project.requiredSkills} />
-                </div>
+                        <MembersSection members={project.memberships} />
 
-                <div className="grid grid-cols-2 gap-4 mt-4">
-                    <MembersSection members={project.memberships} />
+                    </div>
+                    <div>
+
+                    <SkillsSection projectSkills={project.requiredSkills} />
+                    <VacanciesSection vacancies={project.vacancies} />
+                    </div>
                 </div>
             </div>
         </div>
