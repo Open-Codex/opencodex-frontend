@@ -247,6 +247,17 @@
                     "share": "Compartir",
                     "report": "Reportar"
                 }
+            },
+            "Vacancies": {
+                "title": "Project Vacancies",
+                "noVacancies": "No vacancies available",
+                "status": "Estado",
+                "open": "Abierto",
+                "filled": "Lleno",
+                "prev": "Anterior",
+                "next": "Siguiente",
+                "page": "Página",
+                "of": "de"
             }
         }
     }
