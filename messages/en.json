@@ -246,6 +246,17 @@
                     "share": "Share",
                     "report": "Report"
                 }
+            },
+            "Vacancies": {
+                "title": "Project Vacancies",
+                "noVacancies": "No vacancies available",
+                "status": "Status",
+                "open": "Open",
+                "filled": "Lleno",
+                "prev": "Prev",
+                "next": "Next",
+                "page": "Page",
+                "of": "of"
             }
         }
     }
