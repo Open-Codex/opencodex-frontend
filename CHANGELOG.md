@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.4] - 2025-09-23
+
+### Change
+- Admin Panel Page
+- Components for Admin Panel Page
+- Hooks for Admin Panel Page Page
+
+#### Pending Changes
+- Translate
+- Enhanced Components and Forms
+
 ## [0.3.3] - 2025-09-21
 
 ### Change
