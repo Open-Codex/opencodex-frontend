@@ -7,6 +7,7 @@ import { useProjectAdminAccess } from '@/hooks/projects/useProjectAdminAccess';
 import { useProjects } from '@/hooks/projects/useProjects';
 import EditProject from './EditProject';
 import EditPermissions from './EditPermissions';
+import EditRole from './EditRole';
 
 const ProjectAdminPanel = () => {
     const router = useRouter();
@@ -14,7 +15,7 @@ const ProjectAdminPanel = () => {
     const { data: hasAccess, isLoading: isCheckingAccess } = useProjectAdminAccess(projectId as string);
     const { data: project, isLoading: isLoadingProject } = useProjects(projectId as string);
 
-    const [tab, setTab] = useState<'overview' | 'editProject' | 'editVacancies' | 'editPermissions'>('overview');
+    const [tab, setTab] = useState<'overview' | 'editProject' | 'editVacancies' | 'editPermissions' | 'editRoles'>('overview');
     const [currentUserId, setCurrentUserId] = useState<string>('');
 
     // Decodificar JWT y obtener userId
@@ -44,6 +45,7 @@ const ProjectAdminPanel = () => {
                 <button className={`px-4 py-2 rounded ${tab === 'editProject' ? 'bg-purple-600' : 'bg-gray-700'}`} onClick={() => setTab('editProject')}>Edit Project</button>
                 <button className={`px-4 py-2 rounded ${tab === 'editVacancies' ? 'bg-purple-600' : 'bg-gray-700'}`} onClick={() => setTab('editVacancies')}>Edit Vacancies</button>
                 <button className={`px-4 py-2 rounded ${tab === 'editPermissions' ? 'bg-purple-600' : 'bg-gray-700'}`} onClick={() => setTab('editPermissions')}>Edit Permissions</button>
+                <button className={`px-4 py-2 rounded ${tab === 'editRoles' ? 'bg-purple-600' : 'bg-gray-700'}`} onClick={() => setTab('editRoles')}>Edit Roles</button>
             </div>
 
             <div className="mt-6">
@@ -61,6 +63,12 @@ const ProjectAdminPanel = () => {
                             permission: m.permission,
                             isCreator: m.user.id === project.creatorId,
                         }))}
+                    />
+                }
+                {tab === 'editRoles' && currentUserId && project &&
+                    <EditRole
+                        projectId={projectId as string}
+                        currentUserId={currentUserId}
                     />
                 }
             </div>
