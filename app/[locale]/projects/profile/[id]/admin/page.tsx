@@ -11,6 +11,7 @@ import EditRole from './EditRole';
 import EditSkills from './EditSkills';
 import AddSkills from './AddSkills';
 import RemoveSkills from './RemoveSkills';
+import VacancyManager from './VacancyManager';
 
 const ProjectAdminPanel = () => {
     const router = useRouter();
@@ -97,7 +98,9 @@ const ProjectAdminPanel = () => {
 
                 {tab === 'editProject' && <EditProject projectId={projectId as string} />}
 
-                {tab === 'editVacancies' && <p>Vacancies management will go here...</p>}
+                {tab === 'editVacancies' && (
+                    <VacancyManager projectId={projectId as string} />
+                )}
 
                 {tab === 'editPermissions' &&
                     currentUserId &&
@@ -120,7 +123,7 @@ const ProjectAdminPanel = () => {
                 )}
 
                 {tab === 'addSkills' && project && <AddSkills projectId={projectId as string} />}
-                
+
                 {tab === 'removeSkills' && project && <RemoveSkills projectId={projectId as string} />}
             </div>
         </div>
