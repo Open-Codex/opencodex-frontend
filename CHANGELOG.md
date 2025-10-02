@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.5] - 2025-10-02
+
+### Change
+- Complete Minimal Project Admin Page
+- Edit Project, Vacancies, Permissions, Roles and Skills.
+
 ## [0.3.4] - 2025-09-23
 
 ### Change
