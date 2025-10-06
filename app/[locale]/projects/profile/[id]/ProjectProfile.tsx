@@ -67,7 +67,7 @@ const ProjectProfile = ({ id }: Props) => {
                     <div>
 
                     <SkillsSection projectSkills={project.requiredSkills} />
-                    <VacanciesSection vacancies={project.vacancies} />
+                    <VacanciesSection vacancies={project.vacancies} projectId={project.id} />
                     </div>
                 </div>
             </div>
