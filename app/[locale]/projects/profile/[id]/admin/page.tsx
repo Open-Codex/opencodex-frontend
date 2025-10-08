@@ -12,6 +12,7 @@ import EditSkills from './EditSkills';
 import AddSkills from './AddSkills';
 import RemoveSkills from './RemoveSkills';
 import VacancyManager from './VacancyManager';
+import ViewJoinRequests from './ViewJoinRequests';
 
 const ProjectAdminPanel = () => {
     const router = useRouter();
@@ -20,7 +21,7 @@ const ProjectAdminPanel = () => {
     const { data: project, isLoading: isLoadingProject } = useProjects(projectId as string);
 
     const [tab, setTab] = useState<
-        'overview' | 'editProject' | 'editVacancies' | 'editPermissions' | 'editRoles' | 'addSkills' | 'removeSkills'
+        'overview' | 'joinRequests' | 'editProject' | 'editVacancies' | 'editPermissions' | 'editRoles' | 'addSkills' | 'removeSkills'
     >('overview');
     const [currentUserId, setCurrentUserId] = useState<string>('');
 
@@ -53,6 +54,12 @@ const ProjectAdminPanel = () => {
                     onClick={() => setTab('overview')}
                 >
                     Overview
+                </button>
+                <button
+                    className={`px-4 py-2 rounded ${tab === 'joinRequests' ? 'bg-purple-600' : 'bg-gray-700'}`}
+                    onClick={() => setTab('joinRequests')}
+                >
+                    Join Requests
                 </button>
                 <button
                     className={`px-4 py-2 rounded ${tab === 'editProject' ? 'bg-purple-600' : 'bg-gray-700'}`}
@@ -95,6 +102,8 @@ const ProjectAdminPanel = () => {
             {/* Tab content */}
             <div className="mt-6">
                 {tab === 'overview' && <p>Project overview goes here...</p>}
+
+                {tab === 'joinRequests' && <ViewJoinRequests projectId={projectId as string} />}
 
                 {tab === 'editProject' && <EditProject projectId={projectId as string} />}
 
